@@ -1,0 +1,116 @@
+/*colors*/
+@c-red: #c0301c;
+@c-white: #ffffff;
+@c-linear: #555555;
+@c-border: #dddddd;
+@c-back: #f8f8f8;
+/*fonts*/
+@f-mons: 'Montserrat', sans-serif;
+@f-robot: 'Roboto Slab', serif;
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&display=swap');
+body {
+  font-family: @f-mons !important;
+}
+/*section*/
+.section-text {
+  text-align: center;
+  h2 {
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 100px;
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: -30px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50px;
+      height: 2px;
+      background: @c-linear;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-family: @f-robot;
+    padding-top: 60px;
+  }
+}
+/*bg-header*/
+.bg-header {
+  background: url('../img/bg-header.jpg');
+    .header {
+      .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-logo {
+          a {
+            font-size: 24px;
+            font-weight: bold;
+            color: @c-white;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        .header-menu {
+          nav {
+            a {
+              font-size: 14px;
+              color: @c-white;
+              margin-left: 35px;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      } 
+    }
+  .header-center {
+    text-align: center;
+    padding: 250px 0;
+      .header-center-h1 {
+        h1 {
+          font-size: 48px;
+          color: @c-white;
+          padding-bottom: 25px;
+          text-transform: uppercase;
+        }
+      }
+    .header-center-text {
+      p {
+        font-size: 20px;
+        color: @c-white;
+        padding-bottom: 55px;
+        font-family: @f-robot;
+      }
+    }
+    .header-center-button {
+      button {
+        background: none;
+        color: @c-white;
+        border: 2px solid @c-white;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+/*services*/
+.services {
+  
+}
+
+
+
+
+
+
+
+
+
