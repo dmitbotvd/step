@@ -16,7 +16,7 @@ body {
 /*section*/
 .section-text {
   text-align: center;
-  h2 {
+  h3 {
     font-size: 20px;
     position: relative;
     text-transform: uppercase;
@@ -139,8 +139,45 @@ body {
 /*about-us*/
 .about-us {
   background: @c-back;
+  .about-us-text {
+    padding: 70px 0;
+    .about-us-text-p {
+      font-family: @f-robot;
+    }
+  }
+  .about-us-slider {
+    .multiple-items {
+      padding-bottom: 100px;
+      .multiple-items-worker {
+        text-align: center;
+        .multiple-items-worker-img {
+          &:hover {
+            background: rgb(85, 85, 85);
+          }
+        }
+        .multiple-items-worker-text {
+          padding-top: 20px;
+          h4 {
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+          p {
+            font-family: @f-robot;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
+/*latest works*/
+.works {
 
+}
+/*bg-project*/
+.bg-project {
+  
+}
 
 
 
