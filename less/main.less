@@ -150,9 +150,43 @@ body {
       padding-bottom: 100px;
       .multiple-items-worker {
         text-align: center;
+        overflow: hidden;
+        margin: 0 15px;
         .multiple-items-worker-img {
+          img {
+            z-index: -1;
+            position: relative;
+            width: 100%;
+          }
           &:hover {
-            background: rgb(85, 85, 85);
+            background: rgba(85, 85, 85, 0.4);
+            z-index: 10;
+          }
+          &:hover .multiple-items-worker-social {
+            bottom: 125px;
+          }
+          .multiple-items-worker-social {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            bottom: -35px;
+            margin-left: 50px;
+            transition: all .3s ease;
+            .multiple-items-worker-item {
+              padding: 3px;
+              i {
+                color: @c-white;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                  background: @c-red;
+                }
+              }
+            }
           }
         }
         .multiple-items-worker-text {
