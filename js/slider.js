@@ -9,12 +9,12 @@ $('.multiple-items').slick({
 $(function () {
   $('.section-flex button').click(function () {
     var get_id = this.id;
-    var get_current = $('.posts .' + get_id);
+    var get_current = $('.section-block .' + get_id);
 
-    $('.post').not(get_current).hide(500);
-    get_current.show(500);
+    $('.section-block-item').not(get_current).hide(100);
+    get_current.show(100);
   });
-  $('#showall').click(function () {
-    $('.post').show(500)
+  $('#All').click(function () {
+    $('.section-block-item').show(100)
   })
 })
