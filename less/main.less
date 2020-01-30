@@ -426,9 +426,77 @@ body {
         }
       }
     }
+    .touch-main-form {
+      .touch-main-input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        input {
+          width: 45%;
+          margin: 20px 15px 0;
+          font-family: @f-robot;
+          font-size: 12px;
+          padding: 15px;
+          text-transform: uppercase;
+          border: 1px solid @c-linear;
+          &:focus {
+            border: 1px solid @c-red;
+            outline: none;
+          }
+        }
+      }
+      .touch-main-textarea {
+        display: flex;
+        justify-content: center;
+        textarea {
+          display: block;
+          margin: 20px;
+          width: 100%;
+          border: 1px solid @c-linear;
+          padding: 15px;
+          font-family: @f-robot;
+          font-size: 12px;
+          text-transform: uppercase;
+          height: 100px;
+          &:focus {
+            border: 1px solid @c-red;
+            outline: none;
+          }
+        }
+      }
+      .touch-main-button {
+        position: relative;
+        button {
+          border: 1px solid @c-linear;
+          background: none;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 15px 35px;
+          margin-left: 20px;
+          &:focus {
+            border: 1px solid @c-red;
+            outline: none;
+          }
+        }
+        .touch-main-text {
+          position: absolute;
+          left: 220px;
+          top: 15px;
+          font-size: 12px;
+          p {
+            span {
+              color: @c-red;
+            }
+          }
+        }
+      }
+    }
   }
 }
-
+/*footer*/
+.footer {
+  background-color: @c-red;
+}
 
 
 
