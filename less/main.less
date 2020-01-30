@@ -4,6 +4,7 @@
 @c-linear: #555555;
 @c-border: #dddddd;
 @c-back: #f8f8f8;
+@c-gray: #8c8c8c;
 /*fonts*/
 @f-mons: 'Montserrat', sans-serif;
 @f-robot: 'Roboto Slab', serif;
@@ -146,6 +147,7 @@ body {
     }
   }
   .about-us-slider {
+    position: relative;
     .multiple-items {
       padding-bottom: 100px;
       .multiple-items-worker {
@@ -202,15 +204,80 @@ body {
         }
       }
     }
+    .multiple-items-worker-button {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      #prev {
+        position: absolute;
+        left: 15px;
+        width: 35px;
+        height: 35px;
+        background: @c-gray;
+        color: @c-white;
+        border-radius: 0;
+        &:hover {
+          background: @c-red;
+        }
+      }
+      #next {
+        position: absolute;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        background: @c-gray;
+        color: @c-white;
+        border-radius: 0;
+        &:hover {
+          background: @c-red;
+        }
+      }
+    }
   }
 }
 /*latest works*/
 .works {
-
+  .section-flex {
+    padding-top: 60px;
+  }
+  .section-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .section-block-item {
+      width: 30%;
+      margin-top: 15px;
+    }
+  }
 }
+
 /*bg-project*/
 .bg-project {
-  
+  background: url('../img/bg-paralax.jpg');
+  background-size: cover;
+  .bg-project-center {
+    text-align: center;
+    padding: 100px 0;
+    .bg-project-center-h2 {
+      h2 {
+        color: @c-white;
+        font-size: 30px;
+        font-family: @f-robot;
+      }
+    }
+    .bg-project-center-button {
+      padding-top: 50px;
+      button {
+        border: 2px solid @c-white;
+        color: @c-white;
+        border-radius: 2px;
+        background: none;
+        text-transform: uppercase;
+        padding: 15px 25px;
+      }
+    }
+  }
 }
 
 
