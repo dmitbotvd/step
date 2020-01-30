@@ -5,6 +5,7 @@
 @c-border: #dddddd;
 @c-back: #f8f8f8;
 @c-gray: #8c8c8c;
+@c-light-g: #777777;
 /*fonts*/
 @f-mons: 'Montserrat', sans-serif;
 @f-robot: 'Roboto Slab', serif;
@@ -288,9 +289,108 @@ body {
 .blog {
   .blog-main {
     padding: 55px 0 100px;
+    .blog-main-blocks {
+      margin-bottom: 40px;
+    }
+    .blog-main-img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .blog-main-info {
+      .blog-main-info-inner {
+        display: flex;
+        align-items: center;
+        .blog-main-info-inner-day {
+          width: 75px;
+          height: 75px;
+          border: 2px solid @c-linear;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            text-transform: uppercase;
+            font-size: 14px;
+            margin: 0;
+            font-weight: bold;
+            color: @c-gray;
+            span {
+              font-size: 24px;
+              display: block;
+              text-align: center;
+            }
+          }
+        }
+        .blog-main-info-inner-right {
+          padding-left: 25px;
+          .blog-main-info-inner-h5 {
+            h5 {
+              text-transform: uppercase;
+              font-size: 16px;
+              padding-top: 20px;
+              color: @c-linear;
+            }
+          }
+          .blog-main-info-inner-author {
+            p {
+              font-style: italic;
+              font-size: 13px;
+              color: @c-light-g;
+            }
+          }
+        }
+      }
+      .blog-main-info-text {
+        padding: 25px 0 30px;
+        p {
+          line-height: 1.7;
+          font-size: 14px;
+          font-family: @f-robot;
+        }
+      }
+      .blog-main-info-button {
+        button {
+          color: @c-light-g;
+          border: none;
+          background: none;
+          text-transform: uppercase;
+          font-family: @f-robot;
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
-
+/*review*/
+.review {
+  background-color: @c-back;
+  .review-main {
+    padding: 95px 0;
+    .brand {
+      display: flex;
+      justify-content: space-around;
+      max-width: 920px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .review-slider {
+      padding-top: 60px;
+      .single-item {
+        .review-slider-main {
+          text-align: center;
+          margin-bottom: 25px;
+          .review-slider-main-text {
+            p {
+              font-family: @f-robot;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

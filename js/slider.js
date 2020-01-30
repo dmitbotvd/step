@@ -11,10 +11,29 @@ $(function () {
     var get_id = this.id;
     var get_current = $('.section-block .' + get_id);
 
-    $('.section-block-item').not(get_current).hide(100);
-    get_current.show(100);
+    $('.section-block-item').not(get_current).hide(200);
+    get_current.show(200);
   });
   $('#All').click(function () {
-    $('.section-block-item').show(100)
+    $('.section-block-item').show(200)
   })
-})
+})/*
+$(function () {
+  $('.section-flex button').click(function () {
+    var get_id = this.id;
+    var get_current = $('.section-block .' + get_id);
+
+    $('.section-block-item').not(get_current).fadeOut(500, 'linear');
+    get_current.fadeIn(500, 'linear');
+  });
+  $('#All').click(function () {
+    $('.section-block-item').fadeIn(500, 'linear')
+  })
+})*/
+$('.single-item').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 10000,
+});
