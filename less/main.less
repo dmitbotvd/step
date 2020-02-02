@@ -642,6 +642,20 @@ body {
     }
     
   }
+  .works {
+    .section-block {
+      .section-block-item {
+        &:hover .section-block-item-abs {
+          bottom: auto;
+        }
+        .section-block-item-abs {
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 50%;
+        }
+      }
+    }
+  } 
 }
 @media screen and (max-width: 991px) {
   /*bg-header*/
@@ -682,22 +696,7 @@ body {
     }
   }
   /*works*/
-  .works {
-    .section-block {
-      .section-block-item {
-        width: 40%;
-        &:hover .section-block-item-abs {
-          bottom: 65px;
-        }
-        .section-block-item-abs {
-          left: 85px;
-          &:hover {
-            bottom: 65px;
-          }
-        }
-      }
-    }
-  }
+  
   /*blog*/ 
     .blog {
       .blog-main {
@@ -711,23 +710,8 @@ body {
     
    /*touch*/
    .touch {
-     .touch-main {
-       padding: 50px 0 50px;
-     }
-   }
-}
-@media screen and (max-width: 768px) {
-  /*review*/
-  .review {
-    .brand {
-      .brand-item {
-        margin: 15px;
-      }
-    }
-  }
-  /*touch*/
-  .touch {
     .touch-main {
+      padding: 50px 0 50px;
       .touch-main-form {
         .touch-main-input {
           input {
@@ -743,6 +727,28 @@ body {
       }
     }
   }
+   /*review*/
+   .review {
+    .brand {
+      .brand-item {
+        margin: 15px;
+      }
+    }
+  }
+  .works {
+    
+    .section-block {
+      .section-block-item {
+        width: 40%;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+ 
+  /*touch*/
+  
 }
 @media screen and (max-width: 550px) {
   /*about-us*/
@@ -762,6 +768,43 @@ body {
         display: none;
       }
     }
+  }
+  /*works*/
+  .works {
+    .section-flex {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      button {
+        margin-bottom: 10px;
+      }
+    }
+    .section-block {
+      .section-block-item {
+        width: 80%;
+        
+      }
+    }
+  }
+  /*touch*/
+  .touch {
+    .touch-main {
+      padding: 0;
+      .touch-main-form {
+        .touch-main-button {
+          .touch-main-text {
+            left: 20px;
+            top: 60px;
+          }
+        }
+      }
+      .touch-main-left {
+        padding-top: 80px;
+        .touch-main-contact {
+          width: 100%;
+        }
+      }
+    }
+    
   }
 }
 
