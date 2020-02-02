@@ -461,6 +461,7 @@ body {
       max-width: 920px;
       margin: 0 auto;
       align-items: center;
+      flex-wrap: wrap;
     }
     .review-slider {
       padding-top: 60px;
@@ -628,6 +629,20 @@ body {
   }
 }
 /*adaptive*/
+@media screen and (max-width: 1200px) {
+  .touch-main {
+    .row {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      .touch-main-left {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+      }
+    }
+    
+  }
+}
 @media screen and (max-width: 991px) {
   /*bg-header*/
   .bg-header {
@@ -659,11 +674,94 @@ body {
     .about-us-slider {
       .multiple-items {
         padding-bottom: 50px;
+        .multiple-items-worker {
+          width: 230px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  /*works*/
+  .works {
+    .section-block {
+      .section-block-item {
+        width: 40%;
+        &:hover .section-block-item-abs {
+          bottom: 65px;
+        }
+        .section-block-item-abs {
+          left: 85px;
+          &:hover {
+            bottom: 65px;
+          }
+        }
+      }
+    }
+  }
+  /*blog*/ 
+    .blog {
+      .blog-main {
+        padding: 50px 0;
+      }
+      .blog-main-info {
+        padding: 50px 0;
+      }
+    }
+    /*review*/
+    
+   /*touch*/
+   .touch {
+     .touch-main {
+       padding: 50px 0 50px;
+     }
+   }
+}
+@media screen and (max-width: 768px) {
+  /*review*/
+  .review {
+    .brand {
+      .brand-item {
+        margin: 15px;
+      }
+    }
+  }
+  /*touch*/
+  .touch {
+    .touch-main {
+      .touch-main-form {
+        .touch-main-input {
+          input {
+            width: 100%;
+          }
+        }
+      }
+      .touch-main-left {
+        flex-wrap: wrap;
+        .touch-main-contact {
+          width: 50%;
+        }
       }
     }
   }
 }
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 550px) {
+  /*about-us*/
+  .about-us {
+    .about-us-text {
+      padding: 50px 0;
+    }
+    .about-us-slider {
+      .multiple-items {
+        padding-bottom: 50px;
+        .multiple-items-worker {
+          width: 120px;
+          margin: 0 auto;
+        }
+      }
+      .multiple-items-worker-button {
+        display: none;
+      }
+    }
+  }
 }
 
